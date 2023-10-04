@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"sort"
 )
 
@@ -12,13 +11,10 @@ func binary_search(item int) int {
 
 	lo := 0
 	hi := len(arr) - 1
-	tries := 0
 	for lo <= hi {
 		mid := (hi + lo) / 2
 		guess := arr[mid]
 
-		fmt.Println(tries)
-		tries++
 		if guess == item {
 			return mid
 		}
